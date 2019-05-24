@@ -1,0 +1,18 @@
+@foreach ($users as $a)
+
+
+              <div class="post-entry-sidebar">
+                <ul>
+                  <li>
+
+                    <a href="">
+                      <img src="({{asset('storage/Unverified_Place/'.$a -> image)}})" alt="Image placeholder" class="mr-4">
+                      <div class="text">
+                        <h4>{{$a -> nama}}</h4>
+                        <div class="post-meta">
+                          <span class="mr-2">{{$a - kategori}} </span> &bullet;
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                      @endforeach
